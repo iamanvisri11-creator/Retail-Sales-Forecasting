@@ -20,13 +20,10 @@ month = st.number_input("Month", value=1)
 week = st.number_input("Week", value=1)
 
 if st.button("Predict Sales"):
-features = np.array([[store, dept, holiday, temp, fuel,
-cpi, unemp, type_, size,
-year, month, week]])
+    features = np.array([[store, dept, holiday, temp, fuel,
+                          cpi, unemp, type_, size,
+                          year, month, week]])
 
-```
-prediction = model.predict(features)
+    prediction = model.predict(features)
 
-st.success(f"Predicted Weekly Sales: {prediction[0]:,.2f}")
-```
-
+    st.success(f"Predicted Weekly Sales: {prediction[0]:,.2f}")
