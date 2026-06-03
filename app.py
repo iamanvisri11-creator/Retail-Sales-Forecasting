@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load("sales_model.pkl")
+model = joblib.load("sales_model_tiny.pkl")
 
 st.title("Retail Sales Forecasting")
 
